@@ -1,0 +1,55 @@
+
+
+   body {
+     background-image: url("gym.jpg");
+      background-size: cover;
+      display: flex; /* to display the boxes in the center*/
+      flex-direction: column; /* display boxes in column */
+      align-items: center;
+    }
+
+    h1 {
+	  font-size:70px;
+      color:white;
+      font-weight: Bold;
+      text-align: center;
+	  
+    }
+
+    p {
+	
+      background-color: #d3d3d8;
+      width: 300px; /* element width*/
+      height: 70px; /* element height*/
+      font-size: 30px;
+      font-family: Georgia;
+      display: flex;
+      align-items: center; /* Aligns the content vertically at the center within the element*/
+      justify-content: center; /* Aligns the content horizontally at the center within the element.*/
+	  border-radius:28px ;
+	  box-shadow:-5px 5px 5px black;
+    }
+
+    a {
+     text-decoration: none;
+	 color:black;
+     }  
+    a:hover{
+			color:red;
+		  }
+   a:visited{
+	color:purple;
+      }
+			
+	
+footer {
+
+	text-align:center;
+	color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2%;
+	width: 1000px;
+	height:60;
+}  
+

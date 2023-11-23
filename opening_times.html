@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opening Times</title>
+    <style>
+        body {
+            background-color: rgb(194, 188, 188);
+        }
+        
+        h1 {
+            background-color: rgb(77, 77, 77);
+            width: 2000px;
+            height: 40px;
+            font-weight: Bold;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 5px 10px;
+        }
+
+        .line td {
+            border-top: 1px solid gray; /* create lines between each row*/
+        }
+    </style>
+ <script>
+	 
+    window.onload = function() {
+    const rows = document.querySelectorAll('tr:not(.line)');  /*selects all table rows (<tr>) that do not have the class .line */
+
+    
+    rows.forEach(row => {   /* iterates through each selected row using forEach()*/
+        row.addEventListener('mouseover', function() { /*change the background color when the mouse over*/
+            this.style.backgroundColor = 'lightblue';
+        });
+
+        row.addEventListener('mouseout', function() {
+            this.style.backgroundColor = ''; /* removing the background color that was set during the mouseover event.*/
+        });
+    });
+};
+    </script>
+</head>
+
+<body>
+    <h1>Opening Times</h1>
+    <table>
+        <tr>
+            <th>Mon</th>
+            <td>06:00 - 12:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Tue</th>
+            <td>06:00 - 12:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Wed</th>
+            <td>06:00 - 12:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Thu</th>
+            <td>06:00 - 12:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Fri</th>
+            <td>06:00 - 10:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Sat</th>
+            <td>06:00 - 10:00</td>
+        </tr>
+        <tr class="line">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Sun</th>
+            <td>06:00 - 12:00</td>
+        </tr>
+    </table>
+</body>
+</html>
